@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url = 'https://repo.runelite.net'
+        content {
+            includeGroupByRegex('net\\.runelite.*')
+        }
+    }
+    mavenCentral()
+}
+
+def runeLiteVersion = '1.13.4'
+
+dependencies {
+    compileOnly group: 'net.runelite', name: 'client', version: runeLiteVersion
+    testImplementation group: 'net.runelite', name: 'client', version: runeLiteVersion
+    testImplementation 'junit:junit:4.13.2'
+}
+
+group = 'com.schwinglive.windmillsmoothing'
+version = '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+tasks.register('run', JavaExec) {
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.schwinglive.windmillsmoothing.WindmillSmoothingDev'
+    jvmArgs '-ea'
+    args '--developer-mode', '--debug'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release.set(11)
+}
