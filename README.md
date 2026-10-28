@@ -1,23 +1,21 @@
+[![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/schwinglive)
+
 # Windmill Animation Smoothing
 
-A standalone RuneLite plugin project, separate from Molch Pearl Chime.
+Makes windmill sails spin more smoothly while preserving their familiar old-school feel.
 
-## What it does
+## Before and after
 
-When RuneLite's built-in Animation Smoothing plugin is active, this plugin excludes the known windmill or mill sail sequences from interpolation:
+| Before | After |
+| --- | --- |
+| ![Windmill before smoothing](https://raw.githubusercontent.com/SchwingCoder/Windmill-Animation-Smoothing/main/images/windmill-before.gif) | ![Windmill after smoothing](https://raw.githubusercontent.com/SchwingCoder/Windmill-Animation-Smoothing/main/images/windmill-after.gif) |
 
-- `AnimationID.MILLSAIL` (472), used by classic windmill sails such as the Draynor windmill.
-- `AnimationID.FAI_VARROCK_MILLSAIL` (6495), the sail sequence used by the rebuilt Varrock windmill family.
-- `AnimationID.BRAIN_MILL_SAIL_ROTATE` (5857), the rotating sail sequence used by the Zanaris mill.
+## Supported windmills
 
-The filter is keyed by animation ID, so every object using one of these sequences receives the same treatment; the plugin does not need to scan or list every world location. RuneLite's built-in filter already excludes the FAI Varrock and Brain mill sequences. This plugin adds the classic sequence and keeps the three known mill sequences grouped together so the behavior is explicit.
+The plugin covers the known animations used by the windmills in:
 
-The plugin preserves the existing interpolation filter, reapplies its exclusions if the built-in smoothing plugin is toggled, and restores the original filter when this plugin is disabled.
+* North-west of Lumbridge
+* North of Ardougne
+* Zanaris
+* South of Hosidius
 
-## Build
-
-On Windows, run `gradlew.bat build`. The project targets Java 11 and pins RuneLite client/API 1.13.4, matching the version resolved by the Molch Pearl Chime project during inspection.
-
-## In-game check
-
-Run `gradlew.bat run`, sign in to the development client, enable RuneLite's Animation Smoothing plugin, then enable Windmill Smoothing. Compare the windmills listed above and confirm ordinary object animations remain unchanged.
