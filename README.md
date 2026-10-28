@@ -2,7 +2,7 @@
 
 # Windmill Animation Smoothing
 
-Makes the windmill spinning animation less jarring and a bit smoother, while preserving their familiar old-school feel.
+Makes the windmill spinning animation a bit smoother, while preserving their familiar old-school feel.
 
 <table>
   <tr>
