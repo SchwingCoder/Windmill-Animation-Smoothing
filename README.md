@@ -2,15 +2,22 @@
 
 # Windmill Animation Smoothing
 
-Makes windmill sails spin more smoothly while preserving their familiar old-school feel.
+Makes the windmill spinning animation less jarring and a bit smoother, while preserving their familiar old-school feel.
 
-| Before | After |
-| --- | --- |
-| ![Windmill before smoothing](https://raw.githubusercontent.com/SchwingCoder/Windmill-Animation-Smoothing/main/images/windmill-before.gif) | ![Windmill after smoothing](https://raw.githubusercontent.com/SchwingCoder/Windmill-Animation-Smoothing/main/images/windmill-after.gif) |
+<table>
+  <tr>
+    <th>Before</th>
+    <th>After</th>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/SchwingCoder/Windmill-Animation-Smoothing/main/images/windmill-before.gif" alt="Windmill before smoothing"></td>
+    <td><img src="https://raw.githubusercontent.com/SchwingCoder/Windmill-Animation-Smoothing/main/images/windmill-after.gif" alt="Windmill after smoothing"></td>
+  </tr>
+</table>
 
-## Supported windmills
+# Supported windmills
 
-The plugin covers the known animations used by the windmills in:
+The plugin covers the animations for the following windmill locations:
 
 * North-west of Lumbridge
 * North of Ardougne

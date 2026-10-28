@@ -13,7 +13,7 @@ import net.runelite.client.plugins.animsmoothing.AnimationSmoothingPlugin;
 
 @PluginDescriptor(
 	name = "Windmill Animation Smoothing",
-	description = "Makes windmill animations look smoother.",
+	description = "Makes the windmill spinning animation less jarring and a bit smoother, while preserving their familiar old-school feel.",
 	tags = {"animation", "windmill", "immersion", "objects"}
 )
 public class WindmillSmoothingPlugin extends Plugin
