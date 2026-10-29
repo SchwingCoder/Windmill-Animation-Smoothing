@@ -4,16 +4,9 @@
 
 Makes the windmill spinning animation a bit smoother, while preserving their familiar old-school feel.
 
-<table>
-  <tr>
-    <th>Before</th>
-    <th>After</th>
-  </tr>
-  <tr>
-    <td><img src="https://raw.githubusercontent.com/SchwingCoder/Windmill-Animation-Smoothing/main/images/windmill-before.gif" alt="Windmill before smoothing"></td>
-    <td><img src="https://raw.githubusercontent.com/SchwingCoder/Windmill-Animation-Smoothing/main/images/windmill-after.gif" alt="Windmill after smoothing"></td>
-  </tr>
-</table>
+| Before | After |
+| --- | --- |
+| ![Windmill before smoothing](https://raw.githubusercontent.com/SchwingCoder/Windmill-Animation-Smoothing/main/images/windmill-before-optimized.gif) | ![Windmill after smoothing](https://raw.githubusercontent.com/SchwingCoder/Windmill-Animation-Smoothing/main/images/windmill-after-optimized.gif) |
 
 # Supported windmills
 
